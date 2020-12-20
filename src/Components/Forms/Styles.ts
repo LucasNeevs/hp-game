@@ -1,11 +1,14 @@
 import { Theme, makeStyles } from '@material-ui/core/styles';
+import styled from 'styled-components';
 
 interface IStyles {
   main: any;
   radio: any;
   title: any;
+  upTitle: any;
   control: any;
   btn: any;
+  grid: any;
 }
 
 export default makeStyles((theme: Theme): IStyles => ({
@@ -23,7 +26,7 @@ export default makeStyles((theme: Theme): IStyles => ({
     },
     margin: '10px 0px',
     '& span': {
-      fontFamily: 'Poppins',
+      fontFamily: 'SegoeUI, sans-serif',
     },
     '& .Mui-focused': {
       transition: 'none',
@@ -33,8 +36,14 @@ export default makeStyles((theme: Theme): IStyles => ({
     color: '#fff',
     fontWeight: 'bold',
     fontSize: '1rem',
-    fontFamily: 'Poppins',
+    fontFamily: 'SegoeUI, sans-serif',
     marginBottom: '10px',
+  },
+  upTitle: {
+    color: 'red',
+    fontSize: 50,
+    fontFamily: 'SegoeUI, sans-serif',
+    padding: 20,
   },
   control: {
     marginBottom: '15px',
@@ -47,5 +56,8 @@ export default makeStyles((theme: Theme): IStyles => ({
       flexDirection: 'column',
       padding: theme.spacing(2),
     },
+  },
+  grid: {
+    padding: '0px 100px',
   },
 }));

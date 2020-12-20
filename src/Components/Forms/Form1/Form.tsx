@@ -1,18 +1,16 @@
 /* eslint-disable no-shadow */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState } from 'react';
+import React from 'react';
 import { FormikProps, withFormik } from 'formik';
 import {
-  Grid, InputLabel, Button, RadioGroup, Radio, FormLabel, FormControlLabel, FormControl,
+  Grid, Button, FormControl, Typography,
 } from '@material-ui/core';
-import Panel from '../Panel/Panel';
-import { IGender, Genders } from '../../Interfaces/IGenders';
-import { dataPanel } from '../Panel/IPanel';
-import { IForm, initialValues } from '../../Interfaces/IForm';
-import { IQuestion, Questions } from '../../Interfaces/IQuestion';
-import { VerifyHat } from '../../Utils/Verify';
-import useStyles from './Styles';
+import { dataPanel } from '../../Panel/IPanel';
+import { IForm, initialValues } from '../../../Interfaces/IForm';
+import { VerifyHat } from '../../../Utils/Verify';
+import useStyles from '../Styles';
 import Question from './Question';
+import QuestionsEasy from './Questions.data';
 
 const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
   const classes = useStyles();
@@ -25,8 +23,6 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
     isSubmitting,
   } = props;
 
-  const questionValues = ['A', 'B', 'C', 'D'];
-
   return (
     <>
       <div className={classes.main}>
@@ -35,8 +31,16 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
             container
             alignItems="center"
             justify="center"
+            className={classes.grid}
           >
-            <h1 style={{ color: 'red', fontSize: '50px' }}>1</h1>
+            <Typography
+              variant="h1"
+              component="p"
+              align="center"
+              className={classes.upTitle}
+            >
+              LEVEL: EASY
+            </Typography>
             <Grid item md={12} xs={12}>
               <FormControl
                 onChange={handleChange}
@@ -44,7 +48,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
                 fullWidth
               >
                 <Question
-                  content={Questions[0]}
+                  content={QuestionsEasy[0]}
                   value={values.questionA}
                 />
               </FormControl>
@@ -57,7 +61,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
                 fullWidth
               >
                 <Question
-                  content={Questions[1]}
+                  content={QuestionsEasy[1]}
                   value={values.questionB}
                 />
               </FormControl>
@@ -70,7 +74,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
                 fullWidth
               >
                 <Question
-                  content={Questions[2]}
+                  content={QuestionsEasy[2]}
                   value={values.questionC}
                 />
               </FormControl>
@@ -83,7 +87,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
                 fullWidth
               >
                 <Question
-                  content={Questions[3]}
+                  content={QuestionsEasy[3]}
                   value={values.questionD}
                 />
               </FormControl>
@@ -96,7 +100,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
                 fullWidth
               >
                 <Question
-                  content={Questions[4]}
+                  content={QuestionsEasy[4]}
                   value={values.questionE}
                 />
               </FormControl>
@@ -109,7 +113,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
                 fullWidth
               >
                 <Question
-                  content={Questions[5]}
+                  content={QuestionsEasy[5]}
                   value={values.questionF}
                 />
               </FormControl>
@@ -122,7 +126,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
                 fullWidth
               >
                 <Question
-                  content={Questions[6]}
+                  content={QuestionsEasy[6]}
                   value={values.questionG}
                 />
               </FormControl>
@@ -135,7 +139,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
                 fullWidth
               >
                 <Question
-                  content={Questions[7]}
+                  content={QuestionsEasy[7]}
                   value={values.questionH}
                 />
               </FormControl>
@@ -148,7 +152,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
                 fullWidth
               >
                 <Question
-                  content={Questions[8]}
+                  content={QuestionsEasy[8]}
                   value={values.questionI}
                 />
               </FormControl>
@@ -161,7 +165,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
                 fullWidth
               >
                 <Question
-                  content={Questions[9]}
+                  content={QuestionsEasy[9]}
                   value={values.questionJ}
                 />
               </FormControl>

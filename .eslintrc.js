@@ -38,6 +38,7 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'off',
         'react/prefer-stateless-function': 'error',
         'react/destructuring-assignment': 'off',
+        'react/jsx-closing-bracket-location': 'off',
         'react/jsx-filename-extension': [
           0, 
           { 'extensions': ['.jsx', '.js', '.ts', '.tsx'] }

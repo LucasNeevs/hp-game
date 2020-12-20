@@ -12,8 +12,18 @@ interface IStyles {
 
 export default makeStyles((): IStyles => ({
   link: {
+    color: 'rgba(255,255,255,0.8)',
+    fontSize: '1.2rem',
+    fontFamily: 'SegoeUI, sans-serif',
+    lineHeight: '3rem',
     textDecoration: 'none !important',
-    color: '#000',
+    backgroundColor: '#000',
+    width: 120,
+    height: 50,
+    textAlign: 'center',
+    border: '2px solid #FFD500',
+    borderRadius: '8%',
+    fontWeight: 'bold',
     '&:hover': {
       fontWeight: 'bold',
     },
@@ -28,7 +38,10 @@ export default makeStyles((): IStyles => ({
     position: 'relative',
     justifyContent: 'center',
     alignItems: 'center',
-    color: '#000',
+    color: '#FFD900',
+    fontSize: '1.5rem',
+    fontFamily: 'SegoeUI, sans-serif',
+    marginBottom: 20,
   },
   form: {
     display: 'flex',

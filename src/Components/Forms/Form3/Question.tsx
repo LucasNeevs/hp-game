@@ -3,8 +3,8 @@ import React from 'react';
 import {
   InputLabel, RadioGroup, Radio, FormControlLabel,
 } from '@material-ui/core';
-import { IPrimativeQuestion, IQuestion } from '../../Interfaces/IQuestion';
-import useStyles from './Styles';
+import { IPrimativeQuestion, IQuestion } from '../../../Interfaces/IQuestion';
+import useStyles from '../Styles';
 
 export default (props: IQuestion): React.ReactElement<HTMLElement> => {
   const { content, value } = props;

@@ -13,7 +13,7 @@ export const Nav = styled(AppBar)`
     rgba(0,0,0,0.6) 25%,
     rgba(0,0,0,0.3) 50%,
     transparent
-  );
+  ) !important;
 `;
 
 export const Title = styled(Typography)`

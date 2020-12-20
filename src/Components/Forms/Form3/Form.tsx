@@ -3,15 +3,15 @@
 import React, { useState } from 'react';
 import { FormikProps, withFormik } from 'formik';
 import {
-  Grid, InputLabel, Button, RadioGroup, Radio, FormLabel, FormControlLabel, FormControl,
+  Grid, InputLabel, Button, RadioGroup, Radio, FormLabel, FormControlLabel, FormControl, Typography,
 } from '@material-ui/core';
-import Panel from '../Panel/Panel';
-import { IGender, Genders } from '../../Interfaces/IGenders';
-import { dataPanel } from '../Panel/IPanel';
-import { IForm, initialValues } from '../../Interfaces/IForm';
-import { IQuestion, Questions } from '../../Interfaces/IQuestion';
-import { VerifyHat } from '../../Utils/Verify';
-import useStyles from './Styles';
+import Panel from '../../Panel/Panel';
+import { IGender, Genders } from '../../../Interfaces/IGenders';
+import { dataPanel } from '../../Panel/IPanel';
+import { IForm, initialValues } from '../../../Interfaces/IForm';
+import { IQuestion, Questions } from '../../../Interfaces/IQuestion';
+import { VerifyHat } from '../../../Utils/Verify';
+import useStyles from '../Styles';
 import Question from './Question';
 
 const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
@@ -35,8 +35,16 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
             container
             alignItems="center"
             justify="center"
+            className={classes.grid}
           >
-            <h1 style={{ color: 'red', fontSize: '50px' }}>4</h1>
+            <Typography
+              variant="h1"
+              component="p"
+              align="center"
+              className={classes.upTitle}
+            >
+              LEVEL: HARD
+            </Typography>
             <Grid item md={12} xs={12}>
               <FormControl
                 onChange={handleChange}
