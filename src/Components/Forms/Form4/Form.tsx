@@ -1,18 +1,16 @@
 /* eslint-disable no-shadow */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState } from 'react';
+import React from 'react';
 import { FormikProps, withFormik } from 'formik';
 import {
-  Grid, InputLabel, Button, RadioGroup, Radio, FormLabel, FormControlLabel, FormControl, Typography,
+  Grid, Button, FormControl, Typography,
 } from '@material-ui/core';
-import Panel from '../../Panel/Panel';
-import { IGender, Genders } from '../../../Interfaces/IGenders';
 import { dataPanel } from '../../Panel/IPanel';
 import { IForm, initialValues } from '../../../Interfaces/IForm';
-import { IQuestion, Questions } from '../../../Interfaces/IQuestion';
-import { VerifyHat } from '../../../Utils/Verify';
+import { VerifyHat } from './Verify';
 import useStyles from '../Styles';
 import Question from './Question';
+import Questions from './Questions.data';
 
 const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
   const classes = useStyles();
@@ -25,12 +23,17 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
     isSubmitting,
   } = props;
 
-  const questionValues = ['A', 'B', 'C', 'D'];
-
   return (
     <>
       <div className={classes.main}>
-        <form onSubmit={handleSubmit}>
+        <Typography
+          variant="h2"
+          component="p"
+          align="center"
+        >
+          EM DESENVOLVIMENTO
+        </Typography>
+        {/* <form onSubmit={handleSubmit}>
           <Grid
             container
             alignItems="center"
@@ -43,7 +46,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
               align="center"
               className={classes.upTitle}
             >
-              LEVEL: ULTRA HARD
+              LEVEL: ULTRAHARD
             </Typography>
             <Grid item md={12} xs={12}>
               <FormControl
@@ -194,30 +197,8 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
                 Reset
               </Button>
             </Grid>
-
-            {/* <Grid item md={6} xs={6}>
-              <Button
-                type="submit"
-                variant="contained"
-                color="primary"
-                disabled={isSubmitting}
-                fullWidth
-              >
-                Click
-              </Button>
-            </Grid>
-            <Grid item md={6} xs={6}>
-              <Button
-                variant="contained"
-                color="default"
-                onClick={handleReset}
-                fullWidth
-              >
-                Reset
-              </Button>
-            </Grid> */}
           </Grid>
-        </form>
+        </form> */}
       </div>
     </>
   );

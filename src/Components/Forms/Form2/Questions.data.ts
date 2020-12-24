@@ -4,7 +4,7 @@ const QuestionsMedium: IPrimativeQuestion[] = [
   {
     id: 1,
     name: 'questionA',
-    question: 'Com quantos um aluno de Hogwarts poderia ir para Hogsmeade?',
+    question: 'Com quantos anos um aluno de Hogwarts recebe permissão para entrar em Hogsmeade?',
     answerA: 'Somente alunos do terceiro ano e os estudantes acima',
     answerB: 'Somente alunos do quinto ano',
     answerC: 'Somente alunos do segundo ano e os estudantes acima',
@@ -16,7 +16,7 @@ const QuestionsMedium: IPrimativeQuestion[] = [
     question: 'Qual opção abaixo contém APENAS feitiços "proibidos" ou maldições imperdoáveis:',
     answerA: 'Crucio, Avada Kadabra, Tormento',
     answerB: 'Cruciatus, Imperius, Avada Kedavra',
-    answerC: 'Imperius, Abada Kendavra, Cruciatius',
+    answerC: 'Imperius, Abada Kendavra, Cruciatus',
     answerD: 'Cruciatus, Alohomora, Avada Kedavra',
   },
   {
@@ -31,11 +31,11 @@ const QuestionsMedium: IPrimativeQuestion[] = [
   {
     id: 4,
     name: 'questionD',
-    question: 'Quem é Alvo Dumbledore?',
+    question: 'Quem é Peter Petigrew?',
     answerA: 'Diretor de Hogwarts',
     answerB: 'Professor em Hogwarts',
-    answerC: 'Pai de Harry Potter',
-    answerD: 'Um comensal da morte',
+    answerC: 'Comensal da morte',
+    answerD: 'Ministro da Justiça',
   },
   {
     id: 5,
@@ -76,7 +76,7 @@ const QuestionsMedium: IPrimativeQuestion[] = [
   {
     id: 9,
     name: 'questionI',
-    question: 'Quantos filmes existem na saga Harry Potter?',
+    question: 'Quantos filmes da saga Harry Potter existem?',
     answerA: '8',
     answerB: '6',
     answerC: '7',

@@ -7,7 +7,7 @@ import {
 } from '@material-ui/core';
 import { dataPanel } from '../../Panel/IPanel';
 import { IForm, initialValues } from '../../../Interfaces/IForm';
-import { VerifyHat } from '../../../Utils/Verify';
+import { VerifyHat } from './Verify';
 import useStyles from '../Styles';
 import Question from './Question';
 import QuestionsEasy from './Questions.data';

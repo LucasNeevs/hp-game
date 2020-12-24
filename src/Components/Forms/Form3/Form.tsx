@@ -1,18 +1,16 @@
 /* eslint-disable no-shadow */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState } from 'react';
+import React from 'react';
 import { FormikProps, withFormik } from 'formik';
 import {
-  Grid, InputLabel, Button, RadioGroup, Radio, FormLabel, FormControlLabel, FormControl, Typography,
+  Grid, Button, FormControl, Typography,
 } from '@material-ui/core';
-import Panel from '../../Panel/Panel';
-import { IGender, Genders } from '../../../Interfaces/IGenders';
 import { dataPanel } from '../../Panel/IPanel';
 import { IForm, initialValues } from '../../../Interfaces/IForm';
-import { IQuestion, Questions } from '../../../Interfaces/IQuestion';
-import { VerifyHat } from '../../../Utils/Verify';
+import { VerifyHat } from './Verify';
 import useStyles from '../Styles';
 import Question from './Question';
+import Questions from './Questions.data';
 
 const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
   const classes = useStyles();
@@ -24,8 +22,6 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
     handleSubmit,
     isSubmitting,
   } = props;
-
-  const questionValues = ['A', 'B', 'C', 'D'];
 
   return (
     <>
