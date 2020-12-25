@@ -8,7 +8,11 @@ interface IStyles {
   upTitle: any;
   control: any;
   btn: any;
+  confirmBtn: any;
+  resetBtn: any;
   grid: any;
+  hatImg: any;
+  containerHat: any;
 }
 
 export default makeStyles((theme: Theme): IStyles => ({
@@ -23,6 +27,9 @@ export default makeStyles((theme: Theme): IStyles => ({
   radio: {
     '& .MuiRadio-root': {
       color: '#ff7826',
+    },
+    '& .MuiFormControlLabel-root': {
+      cursor: 'default !important',
     },
     margin: '10px 0px',
     '& span': {
@@ -51,13 +58,39 @@ export default makeStyles((theme: Theme): IStyles => ({
   btn: {
     display: 'flex',
     flexDirection: 'row',
+    gap: '20px',
     padding: theme.spacing(2),
     '@media(max-width: 767px)': {
       flexDirection: 'column',
       padding: theme.spacing(2),
     },
   },
+  confirmBtn: {
+    backgroundColor: '#ff7826',
+    borderColor: '#ff7111',
+    width: 200,
+    height: 50,
+    fontWeigth: 'bold',
+  },
+  resetBtn: {
+    backgroundColor: '#c9c9c9',
+    borderColor: '#a1a1a1',
+    width: 200,
+    height: 50,
+    fontWeigth: 'bold',
+  },
   grid: {
     padding: '0px 100px',
+  },
+  hatImg: {
+    width: 100,
+    height: 120,
+  },
+  containerHat: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: '-20px',
+    padding: 30,
   },
 }));

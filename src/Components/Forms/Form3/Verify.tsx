@@ -27,7 +27,7 @@ export const VerifyHat = (values: IForm): void => {
       break;
     }
     case 30: {
-      alert('3/10 -> Lufa-Lufa');
+      alert('3/10 -> Sonserina');
       window.location.reload();
       break;
     }
@@ -47,7 +47,7 @@ export const VerifyHat = (values: IForm): void => {
       break;
     }
     case 70: {
-      alert('7/10 -> 10Corvinal');
+      alert('7/10 -> Corvinal');
       window.location.reload();
       break;
     }

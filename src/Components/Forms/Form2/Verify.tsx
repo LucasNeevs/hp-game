@@ -32,22 +32,22 @@ export const VerifyHat = (values: IForm): void => {
       break;
     }
     case 40: {
-      alert('4/10-> Sonserina');
+      alert('4/10-> Lufa-Lufa');
       window.location.reload();
       break;
     }
     case 50: {
-      alert('5/10 -> Sonserina');
+      alert('5/10 -> Lufa-Lufa');
       window.location.reload();
       break;
     }
     case 60: {
-      alert('6/10 -> Corvinal');
+      alert('6/10 -> Sonserina');
       window.location.reload();
       break;
     }
     case 70: {
-      alert('7/10 -> 10Corvinal');
+      alert('7/10 -> Sonserina');
       window.location.reload();
       break;
     }

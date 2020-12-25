@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 import React, { ReactElement, useState } from 'react';
 import {
   BrowserRouter as Router, Switch, Route, Link, BrowserRouter,
@@ -37,6 +38,7 @@ export default (): ReactElement => {
                   key={opt.id}
                   to={opt.value}
                   className={classes.link}
+                  onClick={(): void => alert(opt.text)}
                 >
                   {opt.name}
                 </Link>

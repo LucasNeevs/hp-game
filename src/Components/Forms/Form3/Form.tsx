@@ -11,6 +11,7 @@ import { VerifyHat } from './Verify';
 import useStyles from '../Styles';
 import Question from './Question';
 import Questions from './Questions.data';
+import HatIMG from '../../../Assets/pnghat.png';
 
 const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
   const classes = useStyles();
@@ -41,6 +42,13 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
             >
               LEVEL: HARD
             </Typography>
+            <Grid md={12} xs={12} className={classes.containerHat}>
+              <img
+                alt="selector-hat"
+                src={HatIMG}
+                className={classes.hatImg}
+              />
+            </Grid>
             <Grid item md={12} xs={12}>
               <FormControl
                 onChange={handleChange}
@@ -175,7 +183,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
               <Button
                 type="submit"
                 variant="contained"
-                color="primary"
+                className={classes.confirmBtn}
                 disabled={isSubmitting}
                 fullWidth
               >
@@ -184,34 +192,13 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
               <Button
                 variant="contained"
                 color="default"
+                className={classes.resetBtn}
                 onClick={handleReset}
                 fullWidth
               >
                 Reset
               </Button>
             </Grid>
-
-            {/* <Grid item md={6} xs={6}>
-              <Button
-                type="submit"
-                variant="contained"
-                color="primary"
-                disabled={isSubmitting}
-                fullWidth
-              >
-                Click
-              </Button>
-            </Grid>
-            <Grid item md={6} xs={6}>
-              <Button
-                variant="contained"
-                color="default"
-                onClick={handleReset}
-                fullWidth
-              >
-                Reset
-              </Button>
-            </Grid> */}
           </Grid>
         </form>
       </div>

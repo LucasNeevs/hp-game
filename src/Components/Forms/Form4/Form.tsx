@@ -11,6 +11,7 @@ import { VerifyHat } from './Verify';
 import useStyles from '../Styles';
 import Question from './Question';
 import Questions from './Questions.data';
+import HatIMG from '../../../Assets/pnghat.png';
 
 const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
   const classes = useStyles();
@@ -26,14 +27,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
   return (
     <>
       <div className={classes.main}>
-        <Typography
-          variant="h2"
-          component="p"
-          align="center"
-        >
-          EM DESENVOLVIMENTO
-        </Typography>
-        {/* <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <Grid
             container
             alignItems="center"
@@ -48,6 +42,13 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
             >
               LEVEL: ULTRAHARD
             </Typography>
+            <Grid md={12} xs={12} className={classes.containerHat}>
+              <img
+                alt="selector-hat"
+                src={HatIMG}
+                className={classes.hatImg}
+              />
+            </Grid>
             <Grid item md={12} xs={12}>
               <FormControl
                 onChange={handleChange}
@@ -182,7 +183,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
               <Button
                 type="submit"
                 variant="contained"
-                color="primary"
+                className={classes.confirmBtn}
                 disabled={isSubmitting}
                 fullWidth
               >
@@ -191,6 +192,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
               <Button
                 variant="contained"
                 color="default"
+                className={classes.resetBtn}
                 onClick={handleReset}
                 fullWidth
               >
@@ -198,7 +200,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
               </Button>
             </Grid>
           </Grid>
-        </form> */}
+        </form>
       </div>
     </>
   );

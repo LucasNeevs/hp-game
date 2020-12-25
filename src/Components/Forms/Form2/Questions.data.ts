@@ -67,7 +67,7 @@ const QuestionsMedium: IPrimativeQuestion[] = [
   {
     id: 8,
     name: 'questionH',
-    question: 'Quem foi a pessoa usada por Voldemort no Pedra Filosofal para declarar seu retorno a escola?',
+    question: 'Quem foi a pessoa usada por Voldemort no câmara secreta para declarar seu retorno a escola?',
     answerA: 'A gata do sr. Filtch',
     answerB: 'Nick quase sem cabeça',
     answerC: 'Hermione Granger',

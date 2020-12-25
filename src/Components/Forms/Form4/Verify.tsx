@@ -4,16 +4,16 @@ import { IForm } from '../../../Interfaces/IForm';
 export const VerifyHat = (values: IForm): void => {
   let value = 0;
 
-  if (values.questionA === 'B') value += 10;
-  if (values.questionB === 'C') value += 10;
-  if (values.questionC === 'A') value += 10;
-  if (values.questionD === 'D') value += 10;
-  if (values.questionE === 'A') value += 10;
-  if (values.questionF === 'D') value += 10;
-  if (values.questionG === 'C') value += 10;
-  if (values.questionH === 'D') value += 10;
-  if (values.questionI === 'C') value += 10;
-  if (values.questionJ === 'D') value += 10;
+  if (values.questionA === 'D') value += 10;
+  if (values.questionB === 'D') value += 10;
+  if (values.questionC === 'C') value += 10;
+  if (values.questionD === 'C') value += 10;
+  if (values.questionE === 'B') value += 10;
+  if (values.questionF === 'B') value += 10;
+  if (values.questionG === 'A') value += 10;
+  if (values.questionH === 'C') value += 10;
+  if (values.questionI === 'D') value += 10;
+  if (values.questionJ === 'B') value += 10;
 
   switch (value) {
     case 10: {
@@ -32,22 +32,22 @@ export const VerifyHat = (values: IForm): void => {
       break;
     }
     case 40: {
-      alert('4/10-> Sonserina');
+      alert('4/10-> Lufa-Lufa');
       window.location.reload();
       break;
     }
     case 50: {
-      alert('5/10 -> Sonserina');
+      alert('5/10 -> Lufa-Lufa');
       window.location.reload();
       break;
     }
     case 60: {
-      alert('6/10 -> Corvinal');
+      alert('6/10 -> Sonserina');
       window.location.reload();
       break;
     }
     case 70: {
-      alert('7/10 -> 10Corvinal');
+      alert('7/10 -> Sonserina');
       window.location.reload();
       break;
     }
@@ -57,7 +57,7 @@ export const VerifyHat = (values: IForm): void => {
       break;
     }
     case 90: {
-      alert('9/10 -> Grifinória');
+      alert('9/10 -> Corvinal');
       window.location.reload();
       break;
     }

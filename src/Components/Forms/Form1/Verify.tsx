@@ -47,12 +47,12 @@ export const VerifyHat = (values: IForm): void => {
       break;
     }
     case 70: {
-      alert('7/10 -> 10Corvinal');
+      alert('7/10 -> Corvinal');
       window.location.reload();
       break;
     }
     case 80: {
-      alert('8/10 -> Corvinal');
+      alert('8/10 -> Grifinória');
       window.location.reload();
       break;
     }
