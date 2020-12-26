@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/static/js/main.d51d7d9d.chunk.js",
+    "main.js.map": "/static/js/main.d51d7d9d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2ff89fd5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2ff89fd5.js.map",
+    "static/js/2.e43b2737.chunk.js": "/static/js/2.e43b2737.chunk.js",
+    "static/js/2.e43b2737.chunk.js.map": "/static/js/2.e43b2737.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.df073bef32782bc189f1451e17a58498.js": "/precache-manifest.df073bef32782bc189f1451e17a58498.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.e43b2737.chunk.js.LICENSE.txt": "/static/js/2.e43b2737.chunk.js.LICENSE.txt",
+    "static/media/hog-bg.webp": "/static/media/hog-bg.61b7c23b.webp",
+    "static/media/hp-title.png": "/static/media/hp-title.767b51a5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ff89fd5.js",
+    "static/js/2.e43b2737.chunk.js",
+    "static/js/main.d51d7d9d.chunk.js"
+  ]
+}
